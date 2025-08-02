@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import data from "../../constants/data.json";
 import "./TrendingNow.scss";
 import type { TrendingItem } from "../../utils/types";
+import data from "../../data/data.json";
 
 interface TrendingNowProps {
   onMovieSelect: (movie: TrendingItem) => void;

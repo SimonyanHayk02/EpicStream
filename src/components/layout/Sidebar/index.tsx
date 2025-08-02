@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { navigationItems } from "../../../constants/index";
+import { navigationItems } from "../../../constants/navigationItems";
 
 const Sidebar: React.FC = () => {
   const navigate = useNavigate();

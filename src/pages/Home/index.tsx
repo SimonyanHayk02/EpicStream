@@ -1,8 +1,8 @@
 import React, { useCallback, useEffect, useState } from "react";
 import HomePageHeading from "../../components/HomePageHeading";
 import TrendingNow from "../../components/TrendingNow";
-import data from "../../constants/data.json";
 import type { IFeatured, TrendingItem } from "../../utils/types";
+import data from "../../data/data.json";
 
 interface HomeProps {
   onMovieSelect: (movie: TrendingItem) => void;
