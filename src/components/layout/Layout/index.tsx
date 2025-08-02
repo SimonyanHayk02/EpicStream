@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Sidebar from "../Sidebar";
-import backgroundImage from "../../../assets/FeaturedCoverImage.png";
+const backgroundImage = "/assets/FeaturedCoverImage.png";
 import type { TrendingItem } from "../../../utils/types";
 
 interface LayoutProps {
@@ -42,10 +42,10 @@ const Layout: React.FC<LayoutProps> = ({
         style={{
           backgroundImage: videoUrl ? "none" : `url(${currentBackground})`,
           position: "relative",
-          maskImage: isSidebarHovered 
+          maskImage: isSidebarHovered
             ? "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.2) 15%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.95) 70%, rgba(0,0,0,1) 85%)"
             : "none",
-          WebkitMaskImage: isSidebarHovered 
+          WebkitMaskImage: isSidebarHovered
             ? "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.2) 15%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.95) 70%, rgba(0,0,0,1) 85%)"
             : "none",
         }}

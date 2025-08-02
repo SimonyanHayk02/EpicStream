@@ -100,7 +100,7 @@ const TrendingNow: React.FC<TrendingNowProps> = ({ onMovieSelect }) => {
             >
               <div className="w-full h-64 rounded-lg overflow-hidden cursor-pointer hover:scale-105 transition-transform duration-200">
                 <img
-                  src={`src/assets/${item.CoverImage}`}
+                  src={`/assets/${item.CoverImage}`}
                   alt={item.Title}
                   className="w-full h-full object-cover"
                 />

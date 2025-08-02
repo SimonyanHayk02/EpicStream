@@ -12,7 +12,7 @@ const HomePageHeading: React.FC<IFeatured> = (data) => {
 
         <div className="w-full h-full max-w-lg">
           <img
-            src={`src/assets/${data.TitleImage}`}
+            src={`/assets/${data.TitleImage}`}
             alt="movie"
             className="w-full h-full"
           />
